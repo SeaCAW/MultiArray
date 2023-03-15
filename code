@@ -1,0 +1,22 @@
+#include <iostream>
+# include <limits>
+
+
+
+using namespace std;
+
+const int r = 2;
+const int c = 3;
+
+void printMatrix(int matrix[r][c]){
+    for(int row=0; row < r; row++ ){
+        for(int col = 0; col < c; col++)
+            cout << matrix[row][col]<<endl;;
+}
+}
+int main()
+{
+    int matrix[r][c] = {{11,12,13},{21,22,23}};
+
+    printMatrix(matrix);
+}
